@@ -1,0 +1,6 @@
+CREATE DATABASE wizreg;
+\c wizreg;
+
+CREATE USER wizreg WITH LOGIN PASSWORD 'wizreg';
+GRANT ALL PRIVILEGES ON DATABASE wizreg TO wizreg;
+

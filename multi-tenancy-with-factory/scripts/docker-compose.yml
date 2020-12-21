@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+  postgres:
+    build: './db'
+    restart: 'always'
+    container_name: wizreg-postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - 'POSTGRES_PASSWORD=postgres'
+    networks:
+      infranet:
+        aliases:
+          - 'postgres'
+
+volumes:
+  postgres_data:
+networks:
+  infranet:

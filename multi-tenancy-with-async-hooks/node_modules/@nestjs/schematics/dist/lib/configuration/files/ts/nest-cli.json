@@ -1,0 +1,4 @@
+{
+  "collection": "<%= collection %>",
+  "sourceRoot": "src"
+}
