@@ -1,8 +1,6 @@
 # compiled output
-multi-tenancy-with-async-hooks/dist
-multi-tenancy-with-async-hooks/node_modules
-multi-tenancy-with-factory/dist
-multi-tenancy-with-factory/node_modules
+*/dist
+*/node_modules
 
 # Logs
 logs
